@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #0c0c0c;
+    color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+#box{
+    background-image:url(./images/software-developer.jpg);
+
+    
+}
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #03edf5, #057ca0);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff5733;
+}
+
+/* Section Styling */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #f4f4f4;
+}
+
+h2 {
+    color: #03edf5;
+    font-size: 28px;
+    margin-bottom: 15px;
+    border-left: 4px solid #03edf5;
+    padding-left: 10px;
+}
+
+/* Image Styling */
+.profile-img, .interest-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover, .interest-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects Section */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1 1 calc(45% - 20px);
+    padding: 15px;
+    background: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    background: #353535;
+}
+
+.project a {
+    color: #03edf5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #ff5733;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background: #0c0c0c;
+    color: #f4f4f4;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 2px solid #03edf5;
+}
+
+footer a {
+    color: #03edf5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff5733;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        flex: 1 1 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
